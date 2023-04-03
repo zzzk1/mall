@@ -73,6 +73,7 @@ public class UserController {
             return CommonResult.failed("操作失败");
         }
     }
+
     @ApiOperation("根据id更新用户信息")
     @PutMapping("/update/{id}")
     public CommonResult updateUser(@PathVariable int id, @RequestBody TUser tUser) {
